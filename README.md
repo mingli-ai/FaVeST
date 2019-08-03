@@ -39,7 +39,7 @@ The code has been tested running in Matlab. To run the FaVeST functions and demo
 * **FaVeST_adj.m**: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X -given quadrature rule points on the sphere.
 
 
-* **Fig.2*.m**, **Fig.3*.m**, **Table1.m**, **Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
+* **Fig.2a,2b,2c.m**, **Fig.3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
 
 ## Demo
 We provide a simple demonstration by running `Demo.m`.
