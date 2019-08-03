@@ -20,8 +20,7 @@ If you want to use our codes and datasets in your research, please cite:
 ```
 ## Environment Requirement
 The code has been tested running in Matlab. To run the FaVeST functions and demos, users need to download the NFFT package:
-* [Download Website](https://www-user.tu-chemnitz.de/~potts/nfft/download.php)
-* [Homepage of NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)".
+* [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)".  [Download Website](https://www-user.tu-chemnitz.de/~potts/nfft/download.php)
 * We provide a script **Setup.m** to help download the recent version: 	*nfft-3.5.0-mexw64-openmp.zip* or *nfft-3.5.0-mexw32-openmp.zip* for **Windows binaries**, or *nfft-3.5.0-mexmaci64-openmp.zip* for **MacOS binaries**. In this manner, users can just run **Setup.m** in Matlab when using for the first time. 
 
 ## Functions and Folders
@@ -40,7 +39,7 @@ The code has been tested running in Matlab. To run the FaVeST functions and demo
 * **FaVeST_adj.m**: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X -given quadrature rule points on the sphere.
 
 
-* **Fig.2*.m, Fig.3*.m, Table1.m, Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
+* **Fig.2*.m**, **Fig.3*.m**, **Table1.m**, **Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
 
 ## Demo
 We provide a simple demonstration by running `Demo.m`.
