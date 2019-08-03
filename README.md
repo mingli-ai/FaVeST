@@ -25,9 +25,10 @@ The code has been tested running in Matlab. To run the codes, users need to inst
 
 ## Functions and Folders
 * utils: This folder contains some basic tools/resources/auxiliary functions used for implementing our main functions, such as:
-..*SD: A folder that saves some examples of [symmetric spherical design points](https://web.maths.unsw.edu.au/~rsw/Sphere/EffSphDes/ss.html), i.e., corresponding to the six cases used in our paper. 
-..*m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this tool in the visualization of the vector fields. 
-..*QpS2.m: function used for computing the weights and quadrature nodes (for a given degree and type of quadrature points) in both Cartesian and spherical coordinates. 
+   1. SD: A folder that saves some examples of [symmetric spherical design points](https://web.maths.unsw.edu.au/~rsw/Sphere/EffSphDes/ss.html), i.e., corresponding to the six cases used in our paper. 
+   2. tangent_field: A folder that contains several functions for generating three vector fields and the visualization used in our paper. These functions come from E. J. Fuselier and G. B. Wright who have simulated in "Stability and error estimates for vector field interpolation and decomposition on the sphere with RBFs. SIAM Journal on Numerical Analysis, 47(5):3213-39".
+   3. m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this tool in the visualization of the vector fields. 
+   4. QpS2.m: A function used for computing the weights and quadrature nodes (for a given degree and type of quadrature points) in both Cartesian and spherical coordinates. 
 
 
 * FaVeST_fwd.m: Main function for implementing forward FFTs computing Fourier coefficients with given inputs: T-the vector field samples; L-the degree for vector spherical harmonic; X,w -the quadrature rule used for evaluating FFT. See Algorithm 1 in our paper.
