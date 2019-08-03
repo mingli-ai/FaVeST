@@ -34,9 +34,9 @@ The code has been tested in Matlab environment. To run the FaVeST functions and 
 
 * **Demo.m**: This is used to test whether users have successfully configured NFFT packages by running **Setup.m**, as an immediate test for **FaVeST_fwd.m** and **FaVeST_adj.m** on a tangent field. 
 
-* **FaVeST_fwd.m**: Main function for implementing forward FFTs computing Fourier coefficients with given inputs: T-the vector field samples; L-the degree for vector spherical harmonic; X,w-the quadrature rule used for evaluating FFT. See Algorithm 1 in our paper.
+* **FaVeST_fwd.m**: Main function for implementing forward FFTs computing Fourier coefficients associated with a quadrature rule: T - tangent field samples; L - degree for vector spherical harmonic; X,w - quadrature rule used for evaluating FFT. See Algorithm 1 in our paper.
 
-* **FaVeST_adj.m**: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X-evaluation points on the sphere.
+* **FaVeST_adj.m**: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm -  Fourier coefficients for divergent-free part; blm - Fourier coefficients of curl-free part; X - evaluation points on the sphere.
 
 
 * **Fig2a,2b,2c.m**, **Fig3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: These functions are used to reproduce the numerical results of the corresponding figures and tables of our paper.
