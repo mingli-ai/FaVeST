@@ -19,9 +19,10 @@ If you want to use our codes and datasets in your research, please cite:
 }
 ```
 ## Environment Requirement
-The code has been tested running in Matlab. To run the codes, users need to install the required packages are as follows:
-* [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)".
-* After a successful installation of NFFT library fitting your OS, users can add the NFFT package folder 'xx' into the current working directory (i.e., ../FaVeST/xx).
+The code has been tested running in Matlab. To run the FaVeST functions and demos, users need to download the NFFT package:
+* [Download Website](https://www-user.tu-chemnitz.de/~potts/nfft/download.php)
+* [Homepage of NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)".
+* We provide a script **Setup.m** to help download the recent version: 	*nfft-3.5.0-mexw64-openmp.zip* or *nfft-3.5.0-mexw32-openmp.zip* for **Windows binaries**, or *nfft-3.5.0-mexmaci64-openmp.zip* for **MacOS binaries**. In this manner, users can just run **Setup.m** in Matlab when using for the first time. 
 
 ## Functions and Folders
 * **utils**: This folder contains some basic tools/resources/auxiliary functions used for implementing our main functions, such as:
@@ -30,14 +31,16 @@ The code has been tested running in Matlab. To run the codes, users need to inst
    3. m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this tool in the visualization of the vector fields. 
    4. QpS2.m: A function used for computing the weights and quadrature nodes (for a given degree and type of quadrature points) in both Cartesian and spherical coordinates. 
 
+* **Setup.m**: The script used for downloading NFFT package (matching the current operating system and computing environment) and unzipping the package and putting in the current folder with FaVeST. If successful, users can use FaVeST by referring to the demos and examples. 
+
+* **Demo.m**: This is used to test whether users have successfully configured NFFT packages by running **Setup.m**, as an immediate trial  for how to run **FaVeST_fwd.m** and **FaVeST_adj.m** with a given vector field. 
 
 * **FaVeST_fwd.m**: Main function for implementing forward FFTs computing Fourier coefficients with given inputs: T-the vector field samples; L-the degree for vector spherical harmonic; X,w -the quadrature rule used for evaluating FFT. See Algorithm 1 in our paper.
 
 * **FaVeST_adj.m**: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X -given quadrature rule points on the sphere.
 
-* **Demo.m**: This is used to demonstrate how to run **FaVeST_fwd.m** and **FaVeST_adj.m** with a given vector field. 
 
-* **Setup.m**: This is used to illstrate the simulation results with three plots including the target vector field, the approximated vector field and the error.
+* **Fig.2*.m, Fig.3*.m, Table1.m, Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
 
 ## Demo
 We provide a simple demonstration by running `Demo.m`.
