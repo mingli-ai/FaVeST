@@ -1,24 +1,20 @@
 # FaVeST: Fast Vector Spherical Harmonic Transforms
 This is our Matlab implementation for the paper:
 
->Q. T. Le Gia, M. Li, Y. G. Wang. [FaVeST: Fast Vector Spherical Harmonic Transforms](https://arxiv.org/abs/xxxxxx). arXiv....., 2019.
+>Q. T. Le Gia, M. Li, Y. G. Wang. [FaVeST: Fast Vector Spherical Harmonic Transforms](https://arxiv.org/abs/1908.00041). arXiv preprint arXiv:1908.00041, 2019.
 
 Author: Dr. Quoc Thong Le Gia (qleqia@unsw.edu.au), Dr. Ming Li (ming.li.ltu@gmail.com), Dr. Yu Guang Wang (yuguang.wang@unsw.edu.au).
 
 ## Abstract
-Vector spherical harmonics on $\mathbb{S}^{2}\subset \mathbb{R}^3$ have wide applications in geophysics, quantum mechanics and astrophysics. In the representation of a tangent field, one needs to evaluate the expansion and the Fourier coefficients of vector spherical harmonics. In this paper, we develop fast algorithms (FaVeST) for vector spherical harmonic transforms for these evaluations. The forward FaVeST which evaluates the Fourier coefficients has computational steps proportional to $N\log \sqrt{N}$ for $N$ number of evaluation points. The adjoint FaVeST which evaluates a linear combination of vector spherical harmonics with degree up to $\sqrt{M}$ for $M$ evaluation points is proportional to $M\log\sqrt{M}$. 
-Numerical examples illustrate the accuracy and efficiency of FaVeST.
+Vector spherical harmonics on $\mathbb{S}^{2}\subset \mathbb{R}^3$ have wide applications in geophysics, quantum mechanics and astrophysics. In the representation of a tangent field, one needs to evaluate the expansion and the Fourier coefficients of vector spherical harmonics. In this paper, we develop fast algorithms (FaVeST) for vector spherical harmonic transforms for these evaluations. The forward FaVeST which evaluates the Fourier coefficients has computational steps proportional to $N\log \sqrt{N}$ for $N$ number of evaluation points. The adjoint FaVeST which evaluates a linear combination of vector spherical harmonics with degree up to $\sqrt{M}$ for $M$ evaluation points is proportional to $M\log\sqrt{M}$. Numerical examples illustrate the accuracy and efficiency of FaVeST.
 
 ## Citation 
 If you want to use our codes and datasets in your research, please cite:
 ```
 @article{FaVeST,
-  title={Fast Vector Spherical Harmonic Transforms},
-  author={},
-  journal={arXiv PrePrint},
-  volume={xx,
-  number={xx},
-  pages={xx
+  title={FaVeST: Fast Vector Spherical Harmonic Transforms},
+  author={Le Gia, Quoc T. and Li, Ming and Wang, Yu Guang},
+  journal={arXiv preprint arXiv:1908.00041},
   year={2019}
 }
 ```
@@ -28,21 +24,19 @@ The code has been tested running in Matlab. To run the codes, users need to inst
 * After a successful installation of NFFT library fitting your OS, users can add the NFFT package folder 'xx' into the current working directory (i.e., ../FaVeST/xx).
 
 ## Functions and Folders
-* SD points: This folder saves an example of [symmetric spherical design points](https://web.maths.unsw.edu.au/~rsw/Sphere/EffSphDes/ss.html), i.e., ss041.mat, containing 864 points satisfying quadrature rule that is exact for spherical polynomials of degree 41. 
+* utils: This folder contains some basic tools/resources/auxiliary functions used for implementing our main functions, such as:
+..*SD: A folder that saves some examples of [symmetric spherical design points](https://web.maths.unsw.edu.au/~rsw/Sphere/EffSphDes/ss.html), i.e., corresponding to the six cases used in our paper. 
+..*m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this tool in the visualization of the vector fields. 
+..*QpS2.m: function used for computing the weights and quadrature nodes (for a given degree and type of quadrature points) in both Cartesian and spherical coordinates. 
 
-* m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this tool in visualizing vector fields. 
 
-* *QpS2.m*: function used for computing the weights and quadrature nodes (for a given degree and type of quadrature points) in both Cartesian and spherical coordinates. 
+* FaVeST_fwd.m: Main function for implementing forward FFTs computing Fourier coefficients with given inputs: T-the vector field samples; L-the degree for vector spherical harmonic; X,w -the quadrature rule used for evaluating FFT. See Algorithm 1 in our paper.
 
-* *Vecfield_sim.m*: function used for generating simulated vector fileds with vector spherical harmonics with random coefficients. We use this toy example to display how to run the main FaVeST functions.
+* FaVeST_adj.m: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X -given quadrature rule points on the sphere.
 
-* *FaVeST_fwd.m*: Main function for implementing forward FFTs computing Fourier coefficients with given inputs: T-the vector field samples; L-the degree for vector spherical harmonic; X,w -the quadrature rule used for evaluating FFT. See Algorithm 1 in our paper.
+* Demo.m: This is used to demonstrate how to run **FaVeST_fwd.m** and **FaVeST_adj.m** with a given vector field. 
 
-* *FaVeST_adj.m*: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X -given points on the sphere.
-
-* *Demo.m*: This is used to demonstrate how to run **FaVeST_fwd.m** and **FaVeST_adj.m** with a given vector field. 
-
-* *Visualization.m*: This is used to illstrate the simulation results with three plots including the target vector field, the approximated vector field and the error.
+* Setup.m: This is used to illstrate the simulation results with three plots including the target vector field, the approximated vector field and the error.
 
 ## Demo
 We provide a simple demonstration by running `Demo.m`.
