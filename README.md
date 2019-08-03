@@ -39,20 +39,14 @@ The code has been tested running in Matlab. To run the FaVeST functions and demo
 * **FaVeST_adj.m**: Main function for implementing adjoint FFTs for vector spherical harmonic expansion with given inputs: alm- Fourier coefficients for divergent-free part; blm-Fourier coefficients of curl-free part; X -given quadrature rule points on the sphere.
 
 
-* **Fig.2a,2b,2c.m**, **Fig.3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
+* **Fig2a,2b,2c.m**, **Fig3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: These functions are used to reproduce the simulation results demonstrated in our paper.
 
 ## Demo
-We provide a simple demonstration by running `Demo.m`.
-* Both GL and SD points satisfying quadrature rule that is exact for spherical polynomials of certain degree can be tried by specifying `QN = 'GL'` or `QN = 'SD'`
-* For a toy illustration, we only use `L=20` in the simulation, corresponding to 882 GL points and 864 SD points.
+After running  **Setup.m** successfully (meaning that NFFT package folder appears in **FaVeST** folder),  users can get the following visualization results that is the same as Fig.2(a) in our paper. Then, good news~all is in order now, uers can try different settings by running **Demo.m**, or test our simulation results by running the other m-scripts (e.g. **Fig3a.m**). 
 
-Running `Demo.m` can produce the following basic results, showing the effectiveness of FaVeST:
+<img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_gl.png" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_rec_gl.png" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_err_gl.png" width="250">
 
-#### GL points
-<img src="https://github.com/mingli-ai/FaVeST/blob/master/images/Tar_VF_GL.jpg" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/Appro_VF_GL.jpg" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/Error_VF_GL.jpg" width="250">
 
-#### SD points
-<img src="https://github.com/mingli-ai/FaVeST/blob/master/images/Tar_VF_SD.jpg" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/Appro_VF_SD.jpg" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/Error_VF_SD.jpg" width="250">
 
 
 
