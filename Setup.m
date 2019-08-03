@@ -1,4 +1,4 @@
-% Download NFFT Package and Run Demo
+% Download NFFT Package and Run Demo (needed once!!!)
 clear;clc;
 str = computer;
 switch str
