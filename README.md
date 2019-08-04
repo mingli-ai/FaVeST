@@ -48,7 +48,9 @@ After running **Setup.m** successfully (meaning that NFFT package folder appears
 
 
 ## Acknowledgement
-We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB codes implementing the artificial tangent fields and Matlab routines for the visualization of vector fields. We also thank J. Keiner, S. Kunis, and D. Potts, for their NFFT library implementing FFTs for scalar spherical harmonics. 
+We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB codes implementing the artificial tangent fields and Matlab routines for the visualization of vector fields. We also thank J. Keiner, S. Kunis, and D. Potts, for their NFFT library implementing FFTs for scalar spherical harmonics. M. Li was partially supported from the Australian Research Council under Discovery Project
+DP160101366, and would thank P. Broadbridge and A. Olenko for their helpful comments. Q. T. Le Gia and Y. G. Wang
+acknowledge support from the Australian Research Council under Discovery Project DP180100506.
 
 ## Notes
 The package **FaVeST** may be used for any research purposes under the following conditions:
