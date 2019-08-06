@@ -21,7 +21,7 @@ If you use our codes and datasets, please cite:
 ## Environment Requirement
 The code has been tested in Matlab environment. To run the FaVeST functions and demos, users need to download the NFFT package:
 * [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)".  [Download Website](https://www-user.tu-chemnitz.de/~potts/nfft/download.php)
-* We provide the script **Setup.m** to download a recent version of NFFT: *nfft-3.5.0-mexa64-octave-5.1-openmp.tar.gz* for **Linux binaries**,	*nfft-3.5.0-mexw64-openmp.zip* or *nfft-3.5.0-mexw32-openmp.zip* for **Windows binaries**, or *nfft-3.5.0-mexmaci64-openmp.zip* for **MacOS binaries**, followed by a Demo for FaVeST on simulated tangent fields. In this manner, users can simply run **Setup.m** in Matlab when using for the first time. 
+* We provide the script **Setup.m** to download a recent version of NFFT: *nfft-3.5.0-mexa64-octave-5.1-openmp.tar.gz* for **Linux binaries**,	*nfft-3.5.0-mexw64-openmp.zip* or *nfft-3.5.0-mexw32-openmp.zip* for **Windows binaries**, or *nfft-3.5.0-mexmaci64-openmp.zip* for **macOS binaries**, followed by a Demo for FaVeST on simulated tangent fields. In this manner, users can simply run **Setup.m** in Matlab when using for the first time. 
 
 ## Functions and Folders
 * **utils**: This folder contains some basic tools/resources/auxiliary functions used for implementing our main functions, including
