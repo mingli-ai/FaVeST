@@ -48,7 +48,7 @@ After running **Setup.m** successfully (meaning that NFFT package folder appears
 
 
 ## Acknowledgement
-The authors thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The authors also thank P. Broadbridge and A. Olenko for their helpful comments. M. Li acknowledges support from the Australian Research Council under Discovery Project DP160101366. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
+We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The NFFT package is used for the **FaVeST** package. M. Li acknowledges support from the Australian Research Council under Discovery Project DP160101366. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
 
 ## Notes
 The package **FaVeST** may be used for any research purposes under the following conditions:
