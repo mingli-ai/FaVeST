@@ -47,7 +47,7 @@ After running **Setup.m** successfully (meaning that NFFT package folder appears
 <img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_gl.png" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_rec_gl.png" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_err_gl.png" width="250">
 
 
-## Acknowledgement
+## Acknowledgements
 We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The NFFT package is used for the **FaVeST** package. M. Li acknowledges support from the Australian Research Council under Discovery Project DP160101366. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
 
 ## Notes
