@@ -59,8 +59,8 @@ We provide a demo **Demo.m** for **FaVeST**, which can be run in Windows, Linus 
 We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The NFFT package is used for the **FaVeST** package.  M. Li acknowledges support from the National Natural Science Foundation of China under Grant 61802132, and the Australian Research Council under Discovery Project
 DP160101366 when he worked with P. Broadbridge and A. Olenko at La Trobe University. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
 
-## Notes
+<!-- ## Notes
 The package **FaVeST** may be used for any research purposes under the following conditions:
 * The user must acknowledge the use of **FaVeST** in publications resulting from the use of the functions/tools.
 * The user may not redistribute **FaVeST** without separate permission.
-* The user may not use this information for any commercial or revenue-bearing purposes without first obtaining permission from us.
+* The user may not use this information for any commercial or revenue-bearing purposes without first obtaining permission from us. -->
