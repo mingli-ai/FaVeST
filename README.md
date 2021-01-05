@@ -28,7 +28,7 @@ The code has been tested in Matlab environment.
    3. m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this package for visualization of tangent fields. 
    4. QpS2.m: A function used for computing the weights and quadrature nodes (for a given degree and a specific type of quadrature rule) in both Cartesian and spherical coordinates. 
 
-* **nfft-3.5.2-matlab-openmp**: The pre-compiled Matlab interfaces of NFFT 3.5.2 with AVX2 and OpenMP support, downloaded from [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)". This version was compiled on 64-bit Windows using GCC 9.3.0 x86_64-w64-mingw32 with -march=haswell and Matlab R2018b, x86_64 Linux using GCC 8.3.0 with -march=haswell and Matlab R2017b Update 9, x86_64 macOS using GCC 9.3.0 with -march=haswell and Matlab R2017b. In addition, the binaries for Octave 5.2.0 on Windows were included.
+* **nfft-3.5.2-matlab-openmp**: The pre-compiled Matlab interfaces of NFFT 3.5.2 with AVX2 and OpenMP support, downloaded from [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)". As stated in [NFFT Downloads](https://www-user.tu-chemnitz.de/~potts/nfft/download.php), this version was compiled on 64-bit Windows using GCC 9.3.0 x86_64-w64-mingw32 with -march=haswell and Matlab R2018b, x86_64 Linux using GCC 8.3.0 with -march=haswell and Matlab R2017b Update 9, x86_64 macOS using GCC 9.3.0 with -march=haswell and Matlab R2017b. In addition, the binaries for Octave 5.2.0 on Windows were included.
 
 * **Demo.m**: It tests **FaVeST_fwd.m** and **FaVeST_adj.m** on a tangent field. It is used to test whether users have successfully configured NFFT packages by **Setup.m**. 
 
@@ -46,7 +46,8 @@ Users can try different settings by running **Demo.m**, or test our simulation p
 
 
 ## Acknowledgements
-We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The NFFT package is used for the **FaVeST** package. M. Li acknowledges support from the Australian Research Council under Discovery Project DP160101366. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
+We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The NFFT package is used for the **FaVeST** package.  M. Li acknowledges support from the National Natural Science Foundation of China under Grant 61802132, and the Australian Research Council under Discovery Project
+DP160101366 when he worked with P. Broadbridge and A. Olenko at La Trobe University. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
 
 ## Notes
 The package **FaVeST** may be used for any research purposes under the following conditions:
