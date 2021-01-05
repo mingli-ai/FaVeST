@@ -19,9 +19,7 @@ If you use our codes and datasets, please cite:
 }
 ```
 ## Environment Requirement
-The code has been tested in Matlab environment. To run the FaVeST functions and demos, users need to download the NFFT package:
-* [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)".  [Download Website](https://www-user.tu-chemnitz.de/~potts/nfft/download.php)
-* We provide the script **Setup.m** to download a recent version of NFFT: *nfft-3.5.0-mexa64-octave-5.1-openmp.tar.gz* for **Linux binaries**,	*nfft-3.5.0-mexw64-openmp.zip* or *nfft-3.5.0-mexw32-openmp.zip* for **Windows binaries**, or *nfft-3.5.0-mexmaci64-openmp.zip* for **macOS binaries**, followed by a Demo for FaVeST on simulated tangent fields. In this manner, users can simply run **Setup.m** in Matlab when using for the first time. 
+The code has been tested in Matlab environment. 
 
 ## Functions and Folders
 * **utils**: This folder contains some basic tools/resources/auxiliary functions used for implementing our main functions, including
@@ -30,6 +28,7 @@ The code has been tested in Matlab environment. To run the FaVeST functions and 
    3. m_map: A [mapping package](https://www.eoas.ubc.ca/~rich/map.html#ack) for Matlab. We have used some functions of this package for visualization of tangent fields. 
    4. QpS2.m: A function used for computing the weights and quadrature nodes (for a given degree and a specific type of quadrature rule) in both Cartesian and spherical coordinates. 
 
+* **nfft-3.5.2-matlab-openmp**: The pre-compiled Matlab interfaces of NFFT 3.5.2 with AVX2 and OpenMP support, downloaded from [NFFT library](https://www-user.tu-chemnitz.de/~potts/nfft/): Keiner, J., Kunis, S., and Potts, D. "[*Using NFFT 3 - a software library for various nonequispaced fast Fourier transforms, ACM Trans. Math. Software,36, Article 19, 1-30, 2009*](https://dl.acm.org/citation.cfm?id=1555388)". This version was compiled on 64-bit Windows using GCC 9.3.0 x86_64-w64-mingw32 with -march=haswell and Matlab R2018b, x86_64 Linux using GCC 8.3.0 with -march=haswell and Matlab R2017b Update 9, x86_64 macOS using GCC 9.3.0 with -march=haswell and Matlab R2017b. In addition, the binaries for Octave 5.2.0 on Windows were included.
 
 * **Demo.m**: It tests **FaVeST_fwd.m** and **FaVeST_adj.m** on a tangent field. It is used to test whether users have successfully configured NFFT packages by **Setup.m**. 
 
