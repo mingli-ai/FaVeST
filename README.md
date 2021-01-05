@@ -47,7 +47,7 @@ X - evaluation points on the sphere
 ```
 
 
-* **Fig2a,2b,2c.m**, **Fig3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: These routines are used to reproduce the numerical results of the corresponding figures and tables of the paper.
+* **Fig2a,2b,2c.m**, **Fig3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: these routines are used to reproduce the numerical results of the corresponding figures and tables of the paper.
 
 ## Demo
 We provide a demo **Demo.m** for **FaVeST**, which can be run in Windows, Linus or MacOS. Other numerical tests in our paper are also availabel. Users can try, for example, **Fig3a.m**. 
