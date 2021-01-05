@@ -40,7 +40,7 @@ The code has been tested in Matlab environment.
 * **Fig2a,2b,2c.m**, **Fig3a,3b,3c.m**, **Table1.m**, **Table2_Fig4.m**: These routines are used to reproduce the numerical results of the corresponding figures and tables of our paper.
 
 ## Demo
-Users can try different settings by running **Demo.m**, or test our simulation programs by running other m-scripts (e.g. **Fig3a.m**). 
+We provide a demo **Demo.m** for **FaVeST**, which can be run in Windows, Linus and MacOS. Other numerical tests in our paper are also availabel. Users can try e.g. **Fig3a.m**. 
 
 <img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_gl.png" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_rec_gl.png" width="250"><img src="https://github.com/mingli-ai/FaVeST/blob/master/images/vf_1_err_gl.png" width="250">
 
