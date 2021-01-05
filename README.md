@@ -59,8 +59,23 @@ We provide a demo **Demo.m** for **FaVeST**, which can be run in Windows, Linus 
 We would thank E. J. Fuselier and G. B. Wright for providing their MATLAB program which generates simulated tangent fields. The NFFT package is used for the **FaVeST** package.  M. Li acknowledges support from the National Natural Science Foundation of China under Grant 61802132, and the Australian Research Council under Discovery Project
 DP160101366 when he worked with P. Broadbridge and A. Olenko at La Trobe University. Q. T. Le Gia and Y. G. Wang acknowledge support from the Australian Research Council under Discovery Project DP180100506.
 
-<!-- ## Notes
-The package **FaVeST** may be used for any research purposes under the following conditions:
-* The user must acknowledge the use of **FaVeST** in publications resulting from the use of the functions/tools.
-* The user may not redistribute **FaVeST** without separate permission.
-* The user may not use this information for any commercial or revenue-bearing purposes without first obtaining permission from us. -->
+## Contributing
+Copyright (c) <2020> <NeurIPS>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
