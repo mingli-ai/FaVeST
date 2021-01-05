@@ -3,7 +3,7 @@ This is our Matlab implementation for FaVeST in the paper
 
 >Q. T. Le Gia, M. Li, Y. G. Wang. [FaVeST: Fast Vector Spherical Harmonic Transforms](https://arxiv.org/abs/1908.00041). arXiv preprint arXiv:1908.00041, 2019.
 
-Author: Dr. Quoc Thong Le Gia (qleqia@unsw.edu.au), Dr. Ming Li (ming.li.ltu@gmail.com;mingli@zjnu.edu.cn), Dr. Yu Guang Wang (yuguang.wang@unsw.edu.au).
+Author: Quoc Thong Le Gia (qleqia@unsw.edu.au), Ming Li (ming.li.ltu@gmail.com;mingli@zjnu.edu.cn), Yu Guang Wang (yuguang.wang@unsw.edu.au).
 
 ## Abstract
 Vector spherical harmonics on $\mathbb{S}^{2}\subset \mathbb{R}^3$ have wide applications in geophysics, quantum mechanics and astrophysics. In the representation of a tangent field, one needs to evaluate the expansion and the Fourier coefficients of vector spherical harmonics. In this paper, we develop fast algorithms (FaVeST) for vector spherical harmonic transforms for these evaluations. The forward FaVeST which evaluates the Fourier coefficients has computational steps proportional to $N\log \sqrt{N}$ for $N$ number of evaluation points. The adjoint FaVeST which evaluates a linear combination of vector spherical harmonics with degree up to $\sqrt{M}$ for $M$ evaluation points is proportional to $M\log\sqrt{M}$. Numerical examples illustrate the accuracy and efficiency of FaVeST.
