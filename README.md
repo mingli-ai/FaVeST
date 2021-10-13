@@ -1,7 +1,7 @@
 # FaVeST: Fast Vector Spherical Harmonic Transforms
 This is our Matlab implementation for FaVeST in the paper
 
->Q. T. Le Gia, M. Li, Y. G. Wang. [Algorithm 1018: FaVeST-Fast Vector Spherical Harmonic Transforms](https://dl.acm.org/doi/abs/10.1145/3458470), 47(4): 1-24, 2021. [arxiv version](https://arxiv.org/abs/1908.00041)
+>Q. T. Le Gia, M. Li, Y. G. Wang. [Algorithm 1018: FaVeST-Fast Vector Spherical Harmonic Transforms](https://dl.acm.org/doi/abs/10.1145/3458470), ACM Transactions on Mathematical Software, 47(4): 1-24, 2021. [arxiv version](https://arxiv.org/abs/1908.00041)
 
 Author: Quoc Thong Le Gia (qleqia@unsw.edu.au), Ming Li* (ming.li.ltu@gmail.com;mingli@zjnu.edu.cn), Yu Guang Wang* (yuguang.wang@unsw.edu.au).
 
