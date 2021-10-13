@@ -1,10 +1,11 @@
 # FaVeST: Fast Vector Spherical Harmonic Transforms
 This is our Matlab implementation for FaVeST in the paper
 
->Q. T. Le Gia, M. Li, Y. G. Wang. [FaVeST: Fast Vector Spherical Harmonic Transforms](https://arxiv.org/abs/1908.00041). arXiv preprint arXiv:1908.00041, 2019.
+>Q. T. Le Gia, M. Li, Y. G. Wang. [Algorithm 1018: FaVeST-Fast Vector Spherical Harmonic Transforms](https://dl.acm.org/doi/abs/10.1145/3458470), 47(4): 1-24, 2021. [arxiv version](https://arxiv.org/abs/1908.00041)
 
-Author: Quoc Thong Le Gia (qleqia@unsw.edu.au), Ming Li (ming.li.ltu@gmail.com;mingli@zjnu.edu.cn), Yu Guang Wang (yuguang.wang@unsw.edu.au).
+Author: Quoc Thong Le Gia (qleqia@unsw.edu.au), Ming Li* (ming.li.ltu@gmail.com;mingli@zjnu.edu.cn), Yu Guang Wang* (yuguang.wang@unsw.edu.au).
 
+*Corresponding Authors
 ## Abstract
 Vector spherical harmonics on $\mathbb{S}^{2}\subset \mathbb{R}^3$ have wide applications in geophysics, quantum mechanics and astrophysics. In the representation of a tangent field, one needs to evaluate the expansion and the Fourier coefficients of vector spherical harmonics. In this paper, we develop fast algorithms (FaVeST) for vector spherical harmonic transforms for these evaluations. The forward FaVeST which evaluates the Fourier coefficients has computational steps proportional to $N\log \sqrt{N}$ for $N$ number of evaluation points. The adjoint FaVeST which evaluates a linear combination of vector spherical harmonics with degree up to $\sqrt{M}$ for $M$ evaluation points is proportional to $M\log\sqrt{M}$. Numerical examples illustrate the accuracy and efficiency of FaVeST.
 
@@ -14,8 +15,12 @@ If you use find our package useful, please cite our paper:
 @article{FaVeST,
   title={FaVeST: Fast Vector Spherical Harmonic Transforms},
   author={Le Gia, Quoc T. and Li, Ming and Wang, Yu Guang},
-  journal={arXiv preprint arXiv:1908.00041},
-  year={2019}
+  journal={ACM Transactions on Mathematical Software},
+  volume={47},
+  number={4},
+  pages={1--24},
+  year={2021},
+  publisher={ACM New York, NY}
 }
 ```
 ## Environment Requirement
